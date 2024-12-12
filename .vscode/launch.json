@@ -5,6 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "lldb",
+            "request": "launch",
+            "name": "(Linux) Launch",
+            "cargo": {
+                "args": [
+                    "build",
+                ]
+            },
+            "args": []
+        },
+        {
             "preLaunchTask": "cargo build",
             "name": "(Windows) Launch",
             "type": "cppvsdbg",
